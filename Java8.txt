@@ -37,3 +37,30 @@ class ArrayStore {
 }
 
 answer : 3.
+
+4.Determine the output of this program:
+class Color {
+     int red, green, blue;
+
+     Color() {
+             Color(10, 10, 10);
+     }
+
+     Color(int r, int g, int b) {
+             red = r;
+             green = g;
+             blue = b;
+     }
+
+     void printColor() {
+             System.out.println("red: " + red + " green: " + green + " blue: " + blue);
+     }
+
+     public static void main(String [] args) {
+             Color color = new Color();
+             color.printColor();
+     }
+}
+
+ans: Compiles without errors, and when run, it prints: red: 10 green: 10 blue: 10
+
