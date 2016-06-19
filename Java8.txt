@@ -91,3 +91,81 @@ class Test {
 }
 answer  int.
 
+Consider the following code and choose the right option for the word <access-modifier>:
+// Shape.java
+public class Shape {
+     protected void display() {
+             System.out.println("Display-base");
+      }
+}
+
+// Circle.java
+public class Circle extends Shape {
+     <access-modifier> void display(){
+             System.out.println("Display-derived");
+     }
+}
+
+ans: Public and protected both can be used
+
+Which of the following method(s) from Object class can be overridden? (Select all that apply.)
+finalize() method
+clone() method
+getClass() method
+notify() method
+E.wait() method
+
+ans: clone()
+
+Choose the correct option based on the following program:
+class Color {
+     int red, green, blue;
+
+     Color() {
+             this(10, 10, 10);
+     }
+
+     Color(int r, int g, int b) {
+             red = r;
+             green = g;
+             blue = b;
+     }
+
+     public String toString() {
+             return "The color is: " + red + green + blue;
+     }
+
+     public static void main(String [] args) {
+             System.out.println(new Color());
+     }
+}
+
+ans:Compiles fine, and when run, it prints the following: The color is: 101010
+
+class Color {
+     int red, green, blue;
+
+     Color() {
+             this(10, 10, 10);
+     }
+
+     Color(int r, int g, int b) {
+             red = r;
+             green = g;
+             blue = b;
+         }
+
+        String toString() {
+             return "The color is: " + " red = " + red + " green = " + green + " blue = " + blue;
+         }
+
+        public static void main(String [] args) {
+             // implicitly invoke toString method
+             System.out.println(new Color());
+        }
+     }
+     
+ans: Compiles fine, and when run, it prints the following: The color is: red = 10 green = 10 blue = 10
+
+     
+
