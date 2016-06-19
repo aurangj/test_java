@@ -21,3 +21,19 @@ class Color {
 Anwer: Contructor has return type of void, so will be treated as a method.
 and hence the o/p would be .
 Compiles fine, and when run, it prints the following: red: 0 green: 0 blue: 0
+
+3.Consider the following program:
+class Base {}
+class DeriOne extends Base {}
+class DeriTwo extends Base {}
+
+class ArrayStore {
+     public static void main(String []args) {
+             Base [] baseArr = new DeriOne[3];
+             baseArr[0] = new DeriOne();
+             baseArr[2] = new DeriTwo();
+             System.out.println(baseArr.length);
+     }
+}
+
+answer : 3.
