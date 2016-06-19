@@ -1,0 +1,23 @@
+What will be the output of this program?
+class Color {
+     int red, green, blue;
+
+     void Color() {
+             red = 10;
+             green = 10;
+             blue = 10;
+     }
+
+     void printColor() {
+           System.out.println("red: " + red + " green: " + green + " blue: " + blue);
+     }
+
+     public static void main(String [] args) {
+             Color color = new Color();
+             color.printColor();
+     }
+}
+
+Anwer: Contructor has return type of void, so will be treated as a method.
+and hence the o/p would be .
+Compiles fine, and when run, it prints the following: red: 0 green: 0 blue: 0
