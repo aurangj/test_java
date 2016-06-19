@@ -64,3 +64,30 @@ class Color {
 
 ans: Compiles without errors, and when run, it prints: red: 10 green: 10 blue: 10
 
+5.Choose the correct option based on this code segment:
+class Rectangle { }
+class ColoredRectangle extends Rectangle { }
+class RoundedRectangle extends Rectangle { }
+class ColoredRoundedRectangle extends ColoredRectangle, RoundedRectangle { }
+
+answer:
+Compiler error: '{' expected cannot extend two classes
+
+Consider the following program and determine the output:
+class Test {
+     public void print(Integer i) {
+             System.out.println("Integer");
+     }
+     public void print(int i) {
+             System.out.println("int");
+     }
+     public void print(long i) {
+             System.out.println("long");
+     }
+     public static void main(String args[]) {
+             Test test = new Test();
+                 test.print(10);
+     }
+}
+answer  int.
+
